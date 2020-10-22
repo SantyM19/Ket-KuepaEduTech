@@ -58,12 +58,47 @@
        border-radius: 45px 0px 0px 45px;
        flex-direction: row;
     }    
-    
+
+    /*----  Tasks  -----------------------------------------------------------*/
+
     .tasks{
         justify-content: space-between;
         width: 90%;
+        padding: 2%;
     }
-    
+
+    /*---------  form  -------------*/
+
+    form{
+        height: 15%;
+    }
+
+    input{
+        border-radius: 25px;
+        width: 50%;
+    }
+
+    .uno input{
+        background-size: 20px 20px;
+        background-position-x: 10px;
+    }
+
+    /*---------  Other  -------------*/
+    .other{
+        flex-direction: row;
+    }
+
+    .agend{
+        width: 100%;
+        height: 50%;
+    }
+    .planToday{
+        width: 100%;
+        height: 50%;
+    }
+
+    /*----  Messages  -----------------------------------------------------------*/
+
     .message{
         background-color: var(--main);
         border-radius: 45px 0px 0px 45px;

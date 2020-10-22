@@ -111,14 +111,110 @@ main{
     flex-direction: column;
 }
 
+/*----  Tasks  -----------------------------------------------------------*/
+
 .tasks{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+}
+
+/*---------  form  -------------*/
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+}
+
+input{
+    background-color: #f3f2f7;
+    border: none;
+    border-radius: 15px;
+    width: 70%;
+    padding: 2% 2% 2% 10%;
+}
+
+.uno input{
+    background-image: url("../img/search-solid.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+
+
+.containerr{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dos{
+    justify-content: end;
+}
+
+/*---------  Title  -------------*/
+
+h1{
+    width: 100%;
+    justify-self: start;
+}
+
+/*---------  Percentage  -------------*/
+.percentages{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.inf{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*---------  Other  -------------*/
+.other{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    height: 100%;
 }
+
+.userCall{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.agend{
+    width: 100%;
+    height: 50%;
+}
+
+.planToday{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*----  Messages  -----------------------------------------------------------*/
 
 .message{
     background-color: var(--main);
