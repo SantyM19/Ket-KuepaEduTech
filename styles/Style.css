@@ -208,6 +208,7 @@ h1{
     background: rgb(253,187,45);
     background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,106,153,1) 100%);
     border-radius: 0 100px 100px 0;
+    margin-left: 35px;
 }
 
 h2{
@@ -450,9 +451,10 @@ h2{
     padding: 5%;
 }
 
+
 .notifications{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
 }

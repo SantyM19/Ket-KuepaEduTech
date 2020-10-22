@@ -126,6 +126,7 @@
     .medium{
         width: 50px;
         height: 100px;
+        margin-left: 50px;
     }
 
     .medium h2{
