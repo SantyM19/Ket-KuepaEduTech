@@ -1,5 +1,10 @@
 @media(min-width: 840px){
-    
+    :root {
+        /*----  Colors  ----*/
+          --main:#2b2d42; 
+          --hoverHeader: #f26725;
+      }
+
     /*----  General  -----------------------------------------------------------*/
     
     html, body{
@@ -24,12 +29,7 @@
         height: 85%;
         width: 100%;
     }
-    .container{
-        flex-direction: column;
-        height: 50%;
-        width: 100%;
-    }
-    .login{
+    .container, .login{
         flex-direction: column;
         height: 50%;
         width: 100%;
@@ -52,10 +52,10 @@
     }
 
     header a:hover{
-        color: #f26725;
+        color: var(--hoverHeader);
         border-left-style: solid;
         border-left-width: 2px;
-        border-left-color: #f26725;
+        border-left-color: var(--hoverHeader);
     }
 
     /*----  Main  -----------------------------------------------------------*/

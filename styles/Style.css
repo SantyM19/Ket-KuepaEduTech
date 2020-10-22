@@ -3,6 +3,7 @@
 :root {
     /*----  Colors  ----*/
       --main:#2b2d42; 
+      --hoverHeader: #f26725;
   }
 
 /*----  General  -----------------------------------------------------------*/
@@ -21,14 +22,17 @@ html, body{
 
 /*----  Header  -----------------------------------------------------------*/
 
+header, nav, .container, .login, header a{
+    display: flex;
+    align-items: center;
+}
+
 header{
     width: 100%;
     height: 10%;
     padding: 3%;
     box-sizing: border-box;
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     background-color: var(--main);
 }
@@ -46,34 +50,27 @@ img{
 nav{
     height: 100%;
     width: 85%;
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
 .container{
     height: 100%;
     width: 50%;
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: start;
 }
 
 .login{
     height: 100%;
     width: 50%;
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: end;
 }
 
 header a{
     color: white;
     width: 100%;
-    display: flex;
     justify-content: center;
     text-decoration: none;
 }
@@ -96,7 +93,7 @@ header a{
 }
 
 header a:hover{
-    color: #f26725;
+    color: var(--hoverHeader);
 }
 
 /*----  Main  -----------------------------------------------------------*/
