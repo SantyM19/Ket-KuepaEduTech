@@ -4,6 +4,7 @@
     
     html, body{
         flex-direction: row;
+        height: 100%;
     }
 
     /*----  Header  -----------------------------------------------------------*/
@@ -62,8 +63,7 @@
     /*----  Tasks  -----------------------------------------------------------*/
 
     .tasks{
-        width: 90%;
-        height: 90%;
+        width: 85%;
         padding: 2%;
     }
 
@@ -135,7 +135,14 @@
         background-color: var(--main);
         border-radius: 45px 0px 0px 45px;
         justify-content: space-between;
-        width: 10%;
+        width: 150px;
+        flex-direction: row;
+        padding: 1%;
+      
+    }
+    .notifications{
+        flex-direction: column;
+        justify-content: space-around;
     }
 
 }
