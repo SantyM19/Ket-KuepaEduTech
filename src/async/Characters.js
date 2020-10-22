@@ -1,18 +1,16 @@
-const fetchData = require('../utils/fetchData')
-const API = 'https://api.opendota.com/api/proPlayers/'
-const API1 = ' https://api.opendota.com/api/players/'
-
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-const getCharacters = async (url_api) => {
+
+getCharacters = async (url_api) => {
+    this.dataAPI = { loading: true, error: null }
+
     try{
-        const data = await fetchData(url_api)
+        const response = await fetch(url_api)
+        const data = await response.json()
         for(i=0;i<5;i++){
             x=getRandomInt(0, 2494);
-        
-            //const character = await fetchData(`${API1}${data[x].account_id}`)
 
             console.log(data[x].account_id)
             //console.log(character)
@@ -32,8 +30,8 @@ const getCharacters = async (url_api) => {
         }
     }
     catch(error){
-        console.error(error)
+        this.dataAPI = { loading: false, error: error }
     }
 }
 
-getCharacters(API)
+

@@ -4,6 +4,7 @@
   "description": "It's a CRM Desktop App Web",
   "main": "index.js",
   "scripts": {
+    "index": "node src/index.js",
     "async:mainC": "node src/async/mainCharacter.js",
     "async:Character": "node src/async/Characters.js",
     "async:Heros": "node src/async/Heros.js"
