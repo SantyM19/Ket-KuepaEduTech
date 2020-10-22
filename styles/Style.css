@@ -13,6 +13,10 @@
       --three:#b44393;
       --four:#b17ffc;
       --five:#b14497;
+      --facebook:#3d6abb;
+      --whatsapp:#71e26e;
+      --e-mail:#08dbd2;
+      --telegram:#28a7e8;
       --firstGradient: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,106,153,1) 100%);
       --leadOGradient:linear-gradient(0deg, rgba(176,128,253,1) 0%, rgba(133,183,255,1) 100%);;
       --firstlGradient:linear-gradient(0deg, rgba(0,125,146,1) 0%, rgba(118,253,212,1) 100%);;
@@ -510,19 +514,19 @@ h5{
 }
 
 .fa-facebook-f{
-    color: #3d6abb;
+    color: var(--facebook);
 }
 
 .fa-whatsapp{
-    color: #71e26e;
+    color: var(--whatsapp);
 }
 
 .fa-envelope{
-    color: #08dbd2;
+    color: var(--e-mail);
 }
 
 .fa-telegram{
-    color: #28a7e8;
+    color: var(--telegram);
 }
 
 
