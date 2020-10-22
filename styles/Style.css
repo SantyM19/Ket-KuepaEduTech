@@ -72,6 +72,10 @@ nav{
 
 header a{
     color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 
@@ -92,10 +96,6 @@ header a{
 }
 
 header a:hover{
-    color: #f26725;
-}
-
-header :active{
     color: #f26725;
 }
 
@@ -333,6 +333,7 @@ h2{
     color:white;
     background-color: #464857;
     margin-bottom: 5%;
+    margin-right: 5%;
 }
 
 .first{

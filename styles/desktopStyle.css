@@ -1,4 +1,4 @@
-@media(min-width: 640px){
+@media(min-width: 840px){
     
     /*----  General  -----------------------------------------------------------*/
     
@@ -49,6 +49,13 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
+    }
+
+    header a:hover{
+        color: #f26725;
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-left-color: #f26725;
     }
 
     /*----  Main  -----------------------------------------------------------*/
