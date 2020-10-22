@@ -115,7 +115,6 @@ main{
 
 .tasks{
     display: flex;
-    align-items: center;
     flex-direction: column;
     width: 90%;
     height: 100%;
@@ -130,6 +129,7 @@ form{
     flex-direction: row;
     width: 100%;
     height: 5%;
+    margin: 0%;
 }
 
 input{
@@ -148,8 +148,6 @@ input{
     background-position-x: 5px;
 }
 
-
-
 .containerr{
     width: 50%;
     display: flex;
@@ -161,26 +159,70 @@ input{
     justify-content: end;
 }
 
+.dos input{
+    justify-content: center;
+    width: 50%;
+}
+
 /*---------  Title  -------------*/
 
 h1{
     width: 100%;
     justify-self: start;
+    margin: 0%;
+    color: #2c2f42;
 }
 
 /*---------  Percentage  -------------*/
 .percentages{
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 }
+
+.percentage{
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.percentNum{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin: auto;
+}
+
 
 .inf{
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 80%;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.metaG{
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    width: 250px;
+    margin: 1%;
 }
 
 /*---------  Other  -------------*/
@@ -192,17 +234,29 @@ h1{
     width: 100%;
 }
 
+.agend{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: white;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
 .userCall{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: yellow;
+    padding-left: 2%;
 }
 
-.agend{
-    width: 100%;
-    height: 50%;
+.userCall p, .userCall i{
+    margin: 1% 0%;
 }
 
 .planToday{
@@ -210,8 +264,46 @@ h1{
     height: 50%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.planToday h3{
+    width: 100%;
+}
+
+.planToday h4{
+    display: none;
+}
+
+.leads{
+    width: 40%;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leadO{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leadT{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.leadT i {
+    margin-left: 0%;
+    padding-left: 0%;
 }
 
 /*----  Messages  -----------------------------------------------------------*/
