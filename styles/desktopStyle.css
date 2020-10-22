@@ -110,6 +110,7 @@
     .percentage{
         width: 500px;
         height: 180px;
+        margin-bottom: 0%;
     }
 
     .metaG{
@@ -146,6 +147,7 @@
 
     .agend{
         height: 280px;
+        margin-bottom: 0%;
     }
 
     .agend h3{
@@ -176,6 +178,7 @@
     .leads{
         width: 40%;
         height: 100px;
+        margin-top: 0%;
     }
 
     .leadO{
