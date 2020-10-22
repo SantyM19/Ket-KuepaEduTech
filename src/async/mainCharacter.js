@@ -6,8 +6,7 @@ const getInfCharacter = async (url_api) => {
     try{
         const data = await fetchData(url_api)
         const character = await fetchData(`${API1}${data[0].account_id}`)
-        //const origin = await fetchData(character.origin.url)
-
+        
         console.log(data.length)
         console.log(data[0].account_id)
         //console.log(character)
