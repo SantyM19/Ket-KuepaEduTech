@@ -4,6 +4,19 @@
     /*----  Colors  ----*/
       --main:#2b2d42; 
       --hoverHeader: #f26725;
+      --title:#2c2f42;
+      --barra:#e2e2e2;
+      --status:#fe9709;
+      --tableBlue:#ecf3fd;
+      --one:#b282f6;
+      --two:#037a9c;
+      --three:#b44393;
+      --four:#b17ffc;
+      --five:#b14497;
+      --firstGradient: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,106,153,1) 100%);
+      --leadOGradient:linear-gradient(0deg, rgba(176,128,253,1) 0%, rgba(133,183,255,1) 100%);;
+      --firstlGradient:linear-gradient(0deg, rgba(0,125,146,1) 0%, rgba(118,253,212,1) 100%);;
+      --secondlGradient:linear-gradient(0deg, rgba(180,70,146,1) 0%, rgba(241,95,118,1) 100%);;
   }
 
 /*----  General  -----------------------------------------------------------*/
@@ -22,7 +35,11 @@ html, body{
 
 /*----  Header  -----------------------------------------------------------*/
 
-header, nav, .container, .login, header a{
+header, 
+nav, 
+.container, 
+.login, 
+header a{
     display: flex;
     align-items: center;
 }
@@ -165,14 +182,23 @@ h1{
     width: 100%;
     justify-self: start;
     margin: 0%;
-    color: #2c2f42;
+    color: var(--title);
     margin-bottom: 5%;
 }
 
 /*---------  Percentage  -------------*/
-.percentages{
+
+.percentages, 
+.percentNum, 
+.medium, 
+.medium h2, 
+.inf, 
+.card{
     display: flex;
     align-items: center;
+}
+
+.percentages{
     flex-direction: column;
     width: 100%;
     margin-bottom: 5%;
@@ -188,10 +214,8 @@ h1{
 .percentNum{
     width: 70px;
     height: 70px;
-    display: flex;
     justify-content: end;
-    align-items: center;
-    background-color: #e2e2e2;
+    background-color:var(--barra);
     margin-left: 2%;
     border-radius: 50%;
 } 
@@ -199,11 +223,8 @@ h1{
 .medium{
     width: 35px;
     height: 70px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    background: rgb(253,187,45);
-    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,106,153,1) 100%);
+    background: var(--firstGradient);
     border-radius: 0 100px 100px 0;
     margin-left: 35px;
 }
@@ -217,15 +238,11 @@ h2{
     height: 56px;
     margin-left: -28px;
     background-color: white;
-    display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 50%;
 }
 
 .inf{
-    display: flex;
-    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
@@ -233,8 +250,6 @@ h2{
 
 .card{
     width: 50%;
-    display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: space-around;
     padding: 2%;
@@ -270,15 +285,14 @@ h2{
 .leadObtenidos{
     width: 90%;
     height: 5px;
-    background-color: #e2e2e2;
+    background-color: var(--barra);
     border-radius: 25px;
 }
 
 .leadOb{
     width: 50%;
     height: 5px;
-    background: rgb(253,187,45);
-    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,106,153,1) 100%);
+    background: var(--firstGradient);
     border-radius: 25px;
 }
 
@@ -295,9 +309,19 @@ h2{
 }
 
 /*---------  Other  -------------*/
-.other{
+
+.other,
+.userCall,
+.planToday,
+.leads,
+.leadO,
+.leadO p, 
+.leadT{
     display: flex;
     align-items: center;
+}
+
+.other{
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
@@ -317,8 +341,6 @@ h2{
 }
 
 .userCall{
-    display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
@@ -340,34 +362,32 @@ h2{
 }
 
 .fa-circle{
-    color: #fe9709;
+    color: var(--status);
 }
 
 .one{
-    border-left-color: #b282f6;
-    background-color: #ecf3fd;  
+    border-left-color: var(--one);
+    background-color: var(--tableBlue);  
 }
 
 .two{
-    border-left-color: #037a9c;
+    border-left-color: var(--two);
 }
 .three{
-    border-left-color: #b44393;
-    background-color: #ecf3fd;
+    border-left-color: var(--three);
+    background-color: var(--tableBlue);
 }
 .four{
-    border-left-color: #b17ffc;
+    border-left-color: var(--four);
 }
 .five{
-    border-left-color: #b14497;
-    background-color: #ecf3fd;
+    border-left-color: var(--five);
+    background-color: var(--tableBlue);
 }
 
 .planToday{
     width: 100%;
     height: 50%;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
@@ -386,8 +406,6 @@ h2{
     height: 120px;
     border-radius: 25px;
     background-color: white;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -396,20 +414,15 @@ h2{
     width: 80px;
     height: 80px;
     border-radius: 12px;
-    background: rgb(176,128,253);
-    background: linear-gradient(0deg, rgba(176,128,253,1) 0%, rgba(133,183,255,1) 100%);
-    display: flex;
-    align-items: center;
+    background: var(--leadOGradient);
     justify-content: space-around;
 }
 
 .firstl{
-    background: rgb(0,125,146);
-    background: linear-gradient(0deg, rgba(0,125,146,1) 0%, rgba(118,253,212,1) 100%);
+    background: var(--firstlGradient);
 }
 .secondl{
-    background: rgb(180,70,146);
-    background: linear-gradient(0deg, rgba(180,70,146,1) 0%, rgba(241,95,118,1) 100%); 
+    background: var(--secondlGradient); 
 }
 
 .leadO p{
@@ -417,15 +430,11 @@ h2{
     height: 40px;
     border-radius: 50%;
     background-color: white; 
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
 .leadT{
     width: 70%;
-    display: flex;
-    align-items: center;
     justify-content: start;
     flex-direction: column;
 }
