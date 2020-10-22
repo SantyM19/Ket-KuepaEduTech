@@ -1,0 +1,24 @@
+{
+  "name": "ket",
+  "version": "1.0.0",
+  "description": "It's a CRM Desktop App Web",
+  "main": "index.js",
+  "scripts": {
+    "async:mainC": "node src/async/mainCharacter.js",
+    "async:Character": "node src/async/Characters.js",
+    "async:Heros": "node src/async/Heros.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantyM19/Ket-KuepaEduTech.git"
+  },
+  "author": "Santiago Mejia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantyM19/Ket-KuepaEduTech/issues"
+  },
+  "homepage": "https://github.com/SantyM19/Ket-KuepaEduTech#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
