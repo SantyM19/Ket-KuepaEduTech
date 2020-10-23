@@ -1,10 +1,15 @@
 const getInfCharacter = async (url_api, url_api2, id) => {
     this.dataAPI = { loading: true, error: null }
     try{
+        //This API was consumed to Search player and his id
         const response = await fetch(url_api)
         const data = await response.json()
+
+        //This API was consumed with the player id, searching a lot information about the player for the DOM
         const respons = await fetch(`${url_api2}${data[id].account_id}`)
         const character = await respons.json()
+
+        //Updating the DOM items
 
         document.getElementById("UserName").innerHTML = character.profile.name;
         document.getElementById("avatar").src = character.profile.avatarfull;
