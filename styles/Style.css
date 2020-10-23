@@ -265,10 +265,6 @@ h2{
     margin: 1% 0%;
 }
 
-.card span{
-    font-size: larger;
-}
-
 .metaG{
     flex-direction: column;
     border-radius: 25px;

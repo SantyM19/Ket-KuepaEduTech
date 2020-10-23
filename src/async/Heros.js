@@ -12,10 +12,10 @@ getHeros = async (url_api) => {
         for(i=0;i<6;i++){
             x=getRandomInt(0, 119);
 
-            console.log("id "+data[x].id)
-           // document.getElementById("demo").innerHTML = "Hello World!";
             console.log("name "+data[x].localized_name)
             console.log("attack"+data[x].attack_type)
+            document.getElementById(`p${i}`).innerHTML = 
+            data[x].localized_name+"<br>"+data[x].attack_type;
         }
     } catch (error) {
         this.dataAPI = { loading: false, error: error }
