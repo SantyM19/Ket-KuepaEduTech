@@ -30,7 +30,7 @@
                     <i class="far fa-comment-alt fa-lg"></i>
                 </a>
                 <a class="user" href="">
-                    <img src="img/user.jpg" alt="User">
+                    <img id="avatar" src="img/user.jpg" alt="User">
                 </a>
             </div>
         </nav>
@@ -39,46 +39,46 @@
         <section class="tasks" >
             <form action="">
                 <div class="containerr uno">
-                    <input type="text" placeholder="Search..">
+                    <input id="IdUser" type="number" placeholder="Search..">
                     <i class="fas fa-filter" id="filter"></i>
                 </div>
                 <div class="containerr dos">
                     <input type="date" placeholder="19 / 10 / 2020">
                 </div>
             </form>
-            <h1>Hola, <span>Wey</span></h1>
+            <h1>Hola, <span id="UserName">Wey</span></h1>
             <div class="percentages">
                 <div class="percentage containerr">
                     <div class="percentNum">
                         <div class="medium">
-                            <h2>50%</h2>
+                            <h2 id="rank">50%</h2>
                         </div>
                     </div>
                     <div class="inf">
                         <div class="card">
                             <p>Leads <br> obtenidos</p>
-                            <span>50/100</span>
+                            <span> <span id="ranked">50</span> <span>/100</span></span>
                         </div>
                         <div class="card">
                             <p>Matriculas <br> Finalizadas</p>
-                            <span>10/20</span>
+                            <span><span id="rankedM">10</span><span>/500</span></span>
                         </div>
                         <div class="card">
                             <p>Cola de <br> LLamadas</p>
-                            <span>50/100</span>
+                            <span><span id="rankedCalls">50</span>/<span>/100</span></span>
                         </div>
                     </div>
                 </div>
                 <div class="metaG containerr">
                     <h2>Meta Grupal</h2>
-                    <p>Leads obtenidos 200/400</p>
+                    <p>Leads obtenidos <span id="percent">50</span>/100</p>
                     <div class="leadObtenidos">
-                        <div class="leadOb"></div>
+                        <div class="leadOb" id="leadP"></div>
                     </div>
-                    <p>Matriculas Realizadas 50/100
+                    <p>Matriculas Realizadas <span id="percentM">50</span>/100
                     </p>
                     <div class="leadObtenidos">
-                        <div class="leadOb"></div>
+                        <div class="leadOb" id="leadM"></div>
                     </div>
                 </div>
             </div>

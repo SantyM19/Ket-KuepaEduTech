@@ -3,8 +3,9 @@ const API1 = ' https://api.opendota.com/api/players/'
 const APIHero = 'https://api.opendota.com/api/heroes'
 
 document.getElementById("filter").addEventListener("click", function() {
-    getInfCharacter(API,API1)
+    var idUser = document.getElementById("IdUser").value;
+    getInfCharacter(API,API1,idUser)
     getCharacters(API)
     getHeros(APIHero)
-  }, false);
+}, false);
 
